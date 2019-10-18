@@ -43,6 +43,7 @@ public class RollDice {
         boolean beatNotTim = false;
 
         while (beatNotTim == false) {
+
             RollDice rollDice = new RollDice(io);
             Integer[] rollResult = rollDice.rollDice();
 
