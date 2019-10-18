@@ -14,6 +14,13 @@ public class WorldFactory {
         var gs = new Location("Game Shop", new Exit("Mom's Basement", mb));
         var cc = new Location("Comic Con", new Exit("Comic Con", gs));
 
+        cc.setAdversary(new Adversary("Fan Girl"));
+        gs.setAdversary(new Adversary("Not Tim"));
+        mb.setAdversary(new Adversary("Bearded Basement Dweller"));
+        mf.setAdversary(new Adversary("Han Incredibly Solo"));
+        cp.setAdversary(new Adversary("LARPer"));
+        fd.setAdversary(new Adversary("The Master Hand"));
+
         // This is the starting location of the player.
         return cc;
     }
