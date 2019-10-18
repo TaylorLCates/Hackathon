@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="049b4b27-e221-4dbe-b182-9fe3963d7dbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/StarWarsMadLibs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/StarWarsMadLibs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/BattleLARPer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/BattleLARPer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/FandomTrivia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/FandomTrivia.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

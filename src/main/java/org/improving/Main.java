@@ -1,5 +1,6 @@
 package org.improving;
 
+import org.improving.MiniGames.FandomTrivia;
 import org.improving.MiniGames.GuessCheatCode;
 import org.improving.MiniGames.RollDice;
 import org.improving.MiniGames.StarWarsMadLibs;
@@ -20,8 +21,8 @@ public class Main {
         io.displayText("     Play Roll Dice Trivia: press 2");
         io.displayText("     Play Guess Cheat Code: press 3");
         io.displayText("     Play Star Wars Mad Libs: press 4");
+        io.displayText("     Play Fandom Trivia: press 5");
         io.displayText("");
-//        io.displayText("Play Fandom Trivia: press 5");
 //        io.displayText("Guess the Prime: 6");
 
         String input = io.receiveInput();
@@ -43,6 +44,10 @@ public class Main {
             case"4" :
                 var madLibs = context.getBean(StarWarsMadLibs.class);
                 madLibs.run();
+
+            case"5" :
+                var trivia = context.getBean(FandomTrivia.class);
+                trivia.run();
         }
 
     }
