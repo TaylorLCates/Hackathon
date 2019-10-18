@@ -7,6 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(SpringContext.class);
+        ConsoleInputOutput io = new ConsoleInputOutput();
 
         io.displayText("Welcome to Revenge of the Nerds");
         io.displayText("");
