@@ -2,7 +2,7 @@ package org.improving.domain;
 
 public enum AttackType {
     Trivia,
-    RollRice,
+    RollDice,
     CheatCode,
     MadLib,
     Attack,

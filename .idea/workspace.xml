@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="049b4b27-e221-4dbe-b182-9fe3963d7dbe" name="Default Changelist" comment="">
+    <list default="true" id="049b4b27-e221-4dbe-b182-9fe3963d7dbe" name="Default Changelist" comment="Added madlibs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/BattleLARPer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/BattleLARPer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/AppeaseMasterHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/AppeaseMasterHand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/FandomTrivia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/FandomTrivia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/GuessCheatCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/GuessCheatCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/RollDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/RollDice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/StarWarsMadLibs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/StarWarsMadLibs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/commands/AttackCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/commands/AttackCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/domain/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/domain/Item.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571420382966</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added madlibs">
+      <created>1571429170186</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571429170186</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

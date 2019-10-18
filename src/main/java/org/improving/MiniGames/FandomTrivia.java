@@ -42,6 +42,7 @@ public class FandomTrivia implements MiniGame {
 
         } if (score >=3) {
             io.displayText("You won the game! Here, have my backpack! This wasn't a weird interaction at all!!");
-        } else io.displayText("You lost the game! Fandom-Girl MURDERS YOU.");
+        } else io.displayText("You lost the game! Fandom-Girl MURDERS YOU. " +
+                "\n Haha, jk you can't lose this game.");
     }
 }

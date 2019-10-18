@@ -51,7 +51,7 @@ public class RollDice implements MiniGame {
             io.displayText("NotTim rolled a " + rollResult[0]);
             io.displayText("");
             if (rollDice.didPlayerWin(rollResult)) {
-                io.displayText("You won!");
+                io.displayText("You won! Tim gives you his favorite D20 as a sign of respect, from one dice rolling legend to another.");
                 beatNotTim = true;
             }
             else {

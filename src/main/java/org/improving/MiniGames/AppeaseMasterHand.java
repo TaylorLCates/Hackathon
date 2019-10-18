@@ -67,7 +67,11 @@ public class AppeaseMasterHand implements MiniGame {
         randomList = appeaseMasterHand.randomizeItems(randomList);
         int index = 0;
 
-        io.displayText("The Master Hand wants your stuff.  Give him something.");
+        io.displayText("A massive white glove floats before you, ominous music playing in the background as it looks expectantly at you. Well, " +
+                "\n as expectantly as an eyeless glove can look. It twiddles it's fingers festively, like Jazz Hands and then points to your " +
+                "\n backpack of all the items you've collected. As you open the Hello Kitty backpack, you find a warm 24 oz can of " +
+                "\n natty ice. You crack open the can and use your car keys to pierce a hole in the side, shotgunning the beer before " +
+                "\n facing your final opponent.. He wants your stuff but in a very specific order.");
 
         while (masterHandAppeased == false) {
 
@@ -115,7 +119,12 @@ public class AppeaseMasterHand implements MiniGame {
             }
 
         }
-        io.displayPrompt("Your generosity has appeased Master Hand.  It give you a giant thumbs up!");
+        io.displayPrompt("Your generosity has appeased Master Hand.  It give you a giant thumbs up! " +
+                "\n " +
+                "\n There is a whooshing and a white light envelopes your body. Your vision goes black and you think this is the end. " +
+                "\n You think about all the good times you had. The time you had your first kiss. When Grandma made those awesome cookies. " +
+                "\n That time you got to smell Ryan Reynold's scarf. Before you can dwell too long, you find yourself back " +
+                "\n in your living room, sitting on your couch with a minor concussion.");
     }
 
 }

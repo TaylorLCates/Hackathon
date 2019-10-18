@@ -1,6 +1,5 @@
 package org.improving.commands;
 
-import javafx.animation.FadeTransition;
 import org.improving.GameContext;
 import org.improving.InputOutput;
 import org.improving.MiniGames.*;
@@ -25,7 +24,7 @@ public class AttackCommand extends BaseAliasCommand {
                 case Trivia:
                     challenge = new FandomTrivia(io);
                     break;
-                case RollRice:
+                case RollDice:
                     challenge = new RollDice(io);
                     break;
                 case CheatCode:
@@ -35,11 +34,10 @@ public class AttackCommand extends BaseAliasCommand {
                     challenge = new StarWarsMadLibs(io);
                     break;
                 case Attack:
-                    challenge = new AppeaseMasterHand(io);
+                    challenge = new AttackGame(location, io, gameContext);
                     break;
                 case OrderItems:
-                    io.displayText("Not implemented yet");
-                    challenge = new RollDice(io);
+                    challenge = new AppeaseMasterHand(io);
                     break;
                 default:
                     challenge = new AttackGame(location, io, gameContext);
@@ -48,7 +46,7 @@ public class AttackCommand extends BaseAliasCommand {
             challenge.run();
             if (location.getAdversary() != null && location.getAdversary().getAttackType() != AttackType.Attack) {
                 var advItem = location.getAdversary().getItem();
-                io.displayText(location.getAdversary().getName() + " has been appeased! You found a " + advItem.getName() + " while no one was looking. You may now pass.");
+                //io.displayText(location.getAdversary().getName() + " has been appeased! You now have " + advItem.getName() + ". You may now pass.");
                 gameContext.getPlayer().addItem(advItem);
                 location.setAdversary(null);
             }

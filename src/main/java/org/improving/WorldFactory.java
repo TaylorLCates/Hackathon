@@ -13,9 +13,10 @@ public class WorldFactory {
         var mb = new Location("Mom's Basement", new Exit("To-Scale Millenium Falcon Replica", mf, "exit"));
         var gs = new Location("Game Shop", new Exit("Mom's Basement", mb, "exit"));
         var cc = new Location("Comic Con", new Exit("Game Shop", gs, "gs", "exit"));
+        fd.setExits(new Exit("Comic Con", cc));
 
         cc.setAdversary(new Adversary("Fan Girl", AttackType.Trivia, Item.HELLO_KITTY_BACK_PACK));
-        gs.setAdversary(new Adversary("Not Tim", AttackType.RollRice, Item.A_D20));
+        gs.setAdversary(new Adversary("Not Tim", AttackType.RollDice, Item.A_D20));
         mb.setAdversary(new Adversary("Bearded Basement Dweller", AttackType.CheatCode, Item.CAN_OF_MOUNTAIN_DEW));
         mf.setAdversary(new Adversary("Han Incredibly Solo", AttackType.MadLib, Item.HOKEY_RELIGION));
         cp.setAdversary(new Adversary("LARPer", AttackType.Attack, Item.REPLICA_ARMOR));

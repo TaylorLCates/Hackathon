@@ -66,7 +66,7 @@ public class GuessCheatCode implements MiniGame {
 
                 if (input == prime){
                     io.displayText("");
-                    io.displayText("It worked! The cheat code was " + input +". Thanks for helping me find the cheat code.");
+                    io.displayText("It worked! The cheat code was " + input +". Thanks for helping me find the cheat code. Have a can of Mountain Dew as thanks.");
                     cheatCodeGuessed = true;
                 }
                 else {
