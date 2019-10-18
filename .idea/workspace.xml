@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="049b4b27-e221-4dbe-b182-9fe3963d7dbe" name="Default Changelist" comment="Locations, adversary, and exits added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/improving/commands/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/WorldFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/WorldFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/improving/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/improving/SpringContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/AppeaseMasterHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/AppeaseMasterHand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/BattleLARPer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/BattleLARPer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/FandomTrivia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/FandomTrivia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/GuessCheatCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/GuessCheatCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/RollDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/RollDice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/StarWarsMadLibs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/StarWarsMadLibs.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SNVkdXA2qsA7F03kuqyV5jaTDp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -96,7 +101,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -106,5 +113,21 @@
     <MESSAGE value="Locations and exits added" />
     <MESSAGE value="Locations, adversary, and exits added" />
     <option name="LAST_COMMIT_MESSAGE" value="Locations, adversary, and exits added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/improving/Main.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/improving/Main.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
