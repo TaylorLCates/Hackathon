@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="049b4b27-e221-4dbe-b182-9fe3963d7dbe" name="Default Changelist" comment="extracted a run method for Roll Dice"/>
     <list default="true" id="049b4b27-e221-4dbe-b182-9fe3963d7dbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/GuessCheatCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/GuessCheatCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/RollDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/MiniGames/RollDice.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,10 +30,15 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.improving.domain" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -74,77 +83,14 @@
       <option name="presentableId" value="Default" />
       <updated>1571404185081</updated>
     </task>
-    <task id="LOCAL-00001" summary="add input output">
-      <created>1571408645356</created>
+    <task id="LOCAL-00001" summary="Locations, adversary, and exits added">
+      <created>1571409910588</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1571408645356</updated>
+      <updated>1571409910588</updated>
     </task>
-    <task id="LOCAL-00002" summary="add run() method to game class and echo input in loop">
-      <created>1571409094162</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1571409094162</updated>
-    </task>
-    <task id="LOCAL-00003" summary="remove workspace and add WorldFactory">
-      <created>1571409723815</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1571409723815</updated>
-    </task>
-    <task id="LOCAL-00004" summary="create locations in world factory and make replace exit list with single exit">
-      <created>1571410841793</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1571410841793</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add adversaries to locations">
-      <created>1571411294017</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1571411294017</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add game context">
-      <created>1571411621318</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1571411621318</updated>
-    </task>
-    <task id="LOCAL-00007" summary="modify base alias command and add look command">
-      <created>1571413594538</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1571413594538</updated>
-    </task>
-    <task id="LOCAL-00008" summary="integrate look command into io loop">
-      <created>1571414322727</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1571414322727</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fix look command">
-      <created>1571415224841</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1571415224841</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add move command">
-      <created>1571416650096</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1571416650096</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,16 +107,24 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add input output" />
-    <MESSAGE value="add run() method to game class and echo input in loop" />
-    <MESSAGE value="remove workspace and add WorldFactory" />
-    <MESSAGE value="create locations in world factory and make replace exit list with single exit" />
-    <MESSAGE value="add adversaries to locations" />
-    <MESSAGE value="add game context" />
-    <MESSAGE value="modify base alias command and add look command" />
-    <MESSAGE value="integrate look command into io loop" />
-    <MESSAGE value="fix look command" />
-    <MESSAGE value="add move command" />
-    <option name="LAST_COMMIT_MESSAGE" value="add move command" />
+    <MESSAGE value="Locations and exits added" />
+    <MESSAGE value="Locations, adversary, and exits added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Locations, adversary, and exits added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/improving/Main.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/improving/Main.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
