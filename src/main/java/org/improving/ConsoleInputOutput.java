@@ -22,4 +22,16 @@ public class ConsoleInputOutput implements InputOutput {
     public void displayText(String text) {
         System.out.println(text);
     }
+
+    @Override
+    public int getInteger() {
+        System.out.print("> ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("Please enter an integer.");
+            System.out.print("> ");
+            scanner.nextLine();
+        }
+        int num = scanner.nextInt();
+        return num;
+    }
 }
