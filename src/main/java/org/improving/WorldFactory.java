@@ -10,10 +10,10 @@ public class WorldFactory {
     public Location buildWorld() {
 
         var fd = new Location("Final Destination", null);
-        var cp = new Location("Generic City Park", new Exit("Final Destination", fd));
-        var mf = new Location("To-Scale Millenium Falcon Replica", new Exit("Generic City Park", cp));
-        var mb = new Location("Mom's Basement", new Exit("To-Scale Millenium Falcon Replica", mf));
-        var gs = new Location("Game Shop", new Exit("Mom's Basement", mb));
+        var cp = new Location("Generic City Park", new Exit("Final Destination", fd, "exit"));
+        var mf = new Location("To-Scale Millenium Falcon Replica", new Exit("Generic City Park", cp, "exit"));
+        var mb = new Location("Mom's Basement", new Exit("To-Scale Millenium Falcon Replica", mf, "exit"));
+        var gs = new Location("Game Shop", new Exit("Mom's Basement", mb, "exit"));
         var cc = new Location("Comic Con", new Exit("Game Shop", gs, "gs", "exit"));
 
         cc.setAdversary(new Adversary("Fan Girl"));
