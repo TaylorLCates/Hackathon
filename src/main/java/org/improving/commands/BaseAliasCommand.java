@@ -1,6 +1,7 @@
 package org.improving.commands;
 
 import org.improving.Game;
+import org.improving.GameContext;
 import org.improving.InputOutput;
 
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ public abstract class BaseAliasCommand implements Command {
     }
 
     @Override
-    public boolean isValid(String input, Game game) {
+    public boolean isValid(String input, GameContext gameContext) {
         try {
             return alias.stream().anyMatch(input.trim()::equalsIgnoreCase);
         } catch (UnsupportedOperationException e) {
@@ -26,7 +27,7 @@ public abstract class BaseAliasCommand implements Command {
     }
 
     @Override
-    public void execute(String input, Game game) {
+    public void execute(String input, GameContext gameContext) {
         io.displayText("Command has been executed: " + input);
     }
 }
