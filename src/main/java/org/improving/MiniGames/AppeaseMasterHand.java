@@ -1,15 +1,15 @@
 package org.improving.MiniGames;
 
-import org.improving.ConsoleInputOutput;
+import org.improving.InputOutput;
 import org.improving.domain.Item;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
 
 @Component
-public class AppeaseMasterHand {
+public class AppeaseMasterHand implements MiniGame {
 
-    ConsoleInputOutput io;
+    InputOutput io;
     Collections collections;
 
     private Random rand = new Random();
@@ -23,7 +23,7 @@ public class AppeaseMasterHand {
     private Item replicaArmor = Item.REPLICA_ARMOR;
 
 
-    public AppeaseMasterHand(ConsoleInputOutput io) {
+    public AppeaseMasterHand(InputOutput io) {
         this.io = io;
     }
 

@@ -35,7 +35,7 @@ public class AttackCommand extends BaseAliasCommand {
                     challenge = new StarWarsMadLibs(io);
                     break;
                 case Attack:
-                    challenge = new AttackGame(location, io, gameContext);
+                    challenge = new AppeaseMasterHand(io);
                     break;
                 case OrderItems:
                     io.displayText("Not implemented yet");
