@@ -22,8 +22,8 @@ public class Main {
         io.displayText("     Play Guess Cheat Code: press 3");
         io.displayText("     Play Star Wars Mad Libs: press 4");
         io.displayText("");
-//        io.displayText("Play Fandom Trivia: press 3");
-//        io.displayText("Guess the Prime: 5");
+//        io.displayText("Play Fandom Trivia: press 5");
+//        io.displayText("Guess the Prime: 6");
 
         String input = io.receiveInput();
 

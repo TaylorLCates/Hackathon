@@ -52,7 +52,7 @@ public class StarWarsMadLibs {
                 "\n" +liquid1+ " and will most likely try to take a bite out of your "+bodypart+" if you " +verb1+" in the office!' " +
                 "\n \n \n Han Incredibly Solo uses the madlibs to knock some hot pocket crumbs off of his chest, kicking his feet off the table and looking at the small piece of paper " +
                 "\n with a sour look on his face. 'Man, it sounds like someone just googled a madlibs, found one about piranhas and just " +
-                "\n replaced the word 'piranha' with the word 'bootcamper' to make it somewhat relevant." );
+                "\n replaced the word 'piranha' with the word 'bootcamper' to make it somewhat relevant. Meh. Whatever, here, take this.'" );
     }
 
 
