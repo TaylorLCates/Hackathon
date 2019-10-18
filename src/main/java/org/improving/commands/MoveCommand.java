@@ -21,5 +21,6 @@ public class MoveCommand extends BaseAliasCommand {
 
         var newLocation = location.getExits().getDestination();
         gameContext.getPlayer().setLocation(newLocation);
+        io.displayText("You move to " + newLocation.getName());
     }
 }
