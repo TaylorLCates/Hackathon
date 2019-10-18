@@ -5,7 +5,8 @@ public enum Item {
     HELLO_KITTY_BACK_PACK("A Hello Kitty backpack that contains a warm 24 oz. can of Natty Ice"),
     A_D20("A twenty sided dice"),
     HOKEY_RELIGION("A hokey religion. No match for a blaster at your side, even with an ancient weapon."),
-    REPLICA_ARMOR("Authentic 13th century replica armor");
+    REPLICA_ARMOR("Authentic 13th century replica armor"),
+    THUMPS_UP("A well sought after approval from the Master Hand");
 
     private String name;
     Item(String name) {

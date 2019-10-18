@@ -35,7 +35,10 @@ public class AttackGame implements MiniGame {
         io.displayText("You were attacked! You have " + gameContext.getPlayer().getHitPoints() + "hit points left!!");
 
         if (adversary.getHitPoints() <= 0) {
-            io.displayText(adversary.getName() + " has been defeated! You may now pass.");
+            var advItem = location.getAdversary().getItem();
+            io.displayText(location.getAdversary().getName() + " has been defeated! You found a " + advItem.getName() +
+                    " on his dead corpse. You may now pass. #winning");
+            gameContext.getPlayer().addItem(advItem);
             location.setAdversary(null);
         }
     }

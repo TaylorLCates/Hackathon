@@ -5,6 +5,15 @@ public class Adversary {
     private int hitPoints;
     private int attackDamage;
     private AttackType attackType;
+    private Item item;
+
+    public Adversary(String name, AttackType attackType, Item item) {
+        this.name = name;
+        this.hitPoints = 100;
+        this.attackDamage = 15;
+        this.attackType = attackType;
+        this.item = item;
+    }
 
     public Adversary(String name, AttackType attackType) {
         this.name = name;
@@ -31,5 +40,9 @@ public class Adversary {
 
     public AttackType getAttackType() {
         return attackType;
+    }
+
+    public Item getItem() {
+        return item;
     }
 }

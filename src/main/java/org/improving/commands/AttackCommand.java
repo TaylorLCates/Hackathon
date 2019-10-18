@@ -47,7 +47,9 @@ public class AttackCommand extends BaseAliasCommand {
             }
             challenge.run();
             if (location.getAdversary() != null && location.getAdversary().getAttackType() != AttackType.Attack) {
-                io.displayText(location.getAdversary().getName() + " has been appeased! You may now pass.");
+                var advItem = location.getAdversary().getItem();
+                io.displayText(location.getAdversary().getName() + " has been appeased! You found a " + advItem.getName() + " while no one was looking. You may now pass.");
+                gameContext.getPlayer().addItem(advItem);
                 location.setAdversary(null);
             }
 

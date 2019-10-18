@@ -31,6 +31,10 @@ public class Player {
         this.hitPoints = hitPoints;
     }
 
+    public void addItem(Item item) {
+        inventory.add(item);
+    }
+
     public List<Item> getInventory() {
         return inventory;
     }
