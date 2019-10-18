@@ -11,7 +11,13 @@ public class Player {
     private List<Item> inventory = new ArrayList<>();
     private Location location;
 
-    public Player() { }
+    public Player() {
+
+    }
+
+    public void subtractHitPoints(int damageTaken) {
+        hitPoints = hitPoints - damageTaken;
+    }
 
     public Player(Location location){
         this.location = location;

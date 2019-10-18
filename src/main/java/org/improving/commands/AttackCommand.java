@@ -35,14 +35,14 @@ public class AttackCommand extends BaseAliasCommand {
                     challenge = new StarWarsMadLibs(io);
                     break;
                 case Attack:
-                    challenge = new AttackGame(location, io);
+                    challenge = new AttackGame(location, io, gameContext);
                     break;
                 case OrderItems:
                     io.displayText("Not implemented yet");
                     challenge = new RollDice(io);
                     break;
                 default:
-                    challenge = new AttackGame(location, io);
+                    challenge = new AttackGame(location, io, gameContext);
                     break;
             }
             challenge.run();

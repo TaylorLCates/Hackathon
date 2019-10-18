@@ -49,6 +49,5 @@ public class Main {
                 var trivia = context.getBean(FandomTrivia.class);
                 trivia.run();
         }
-
     }
 }
