@@ -6,8 +6,13 @@ import java.util.List;
 public class Location {
     private String name;
     private String description;
-    List<Exit> exits = new ArrayList<>();
-    Adversary adversary = new Adversary();
+    Exit exit;
+    Adversary adversary;
+
+    public Location(String name, Exit exit) {
+        this.name = name;
+        this.exit = exit;
+    }
 
     public String getName() {
         return name;
@@ -25,12 +30,12 @@ public class Location {
         this.description = description;
     }
 
-    public List<Exit> getExits() {
-        return exits;
+    public Exit getExits() {
+        return exit;
     }
 
-    public void setExits(List<Exit> exits) {
-        this.exits = exits;
+    public void setExits(Exit exit) {
+        this.exit = exit;
     }
 
     public Adversary getAdversary() {
