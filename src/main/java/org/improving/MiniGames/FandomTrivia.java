@@ -12,7 +12,7 @@ public class FandomTrivia implements MiniGame {
     }
 
     public void run(){
-        io.displayText("Along your travels you stumble inside of a convention center that is filled with people dressed as their favorite" +
+        io.displayText("With your head still throbbing, you look around. People near you are dressed as their favorite" +
                 "\n pop/nerd/geek culture icons. You see a person dressed as Pikachu, plenty of X-men, and even a whole squad of" +
                 "\n Stromtroopers! While wide-eyed in wonder, you stumble into a fan girl wearing a Hello Kitty backpack. Taken aback" +
                 "\n she says 'If you want to leave this con alive, You'll have to answer me these questions five!'" +

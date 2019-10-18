@@ -35,19 +35,21 @@ public class AttackCommand extends BaseAliasCommand {
                     challenge = new StarWarsMadLibs(io);
                     break;
                 case Attack:
-                    challenge = new AttackGame(location, io);
+                    challenge = new AttackGame(location, io, gameContext);
                     break;
                 case OrderItems:
                     io.displayText("Not implemented yet");
                     challenge = new RollDice(io);
                     break;
                 default:
-                    challenge = new AttackGame(location, io);
+                    challenge = new AttackGame(location, io, gameContext);
                     break;
             }
             challenge.run();
             if (location.getAdversary() != null && location.getAdversary().getAttackType() != AttackType.Attack) {
-                io.displayText(location.getAdversary().getName() + " has been appeased! You may now pass.");
+                var advItem = location.getAdversary().getItem();
+                io.displayText(location.getAdversary().getName() + " has been appeased! You found a " + advItem.getName() + " while no one was looking. You may now pass.");
+                gameContext.getPlayer().addItem(advItem);
                 location.setAdversary(null);
             }
 

@@ -42,6 +42,8 @@ public class Location {
         return adversary;
     }
 
+
+
     public void setAdversary(Adversary adversary) {
         this.adversary = adversary;
     }
