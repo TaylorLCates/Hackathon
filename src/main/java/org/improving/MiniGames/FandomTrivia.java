@@ -1,11 +1,16 @@
 package org.improving.MiniGames;
 
-import org.improving.ConsoleInputOutput;
+import org.improving.InputOutput;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FandomTrivia {
-    ConsoleInputOutput io = new ConsoleInputOutput();
+public class FandomTrivia implements MiniGame {
+    InputOutput io;
+
+    public FandomTrivia(InputOutput io) {
+        this.io = io;
+    }
+
     public void run(){
         io.displayText("Along your travels you stumble inside of a convention center that is filled with people dressed as their favorite" +
                 "\n pop/nerd/geek culture icons. You see a person dressed as Pikachu, plenty of X-men, and even a whole squad of" +

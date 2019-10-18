@@ -2,11 +2,17 @@ package org.improving.MiniGames;
 
 
 import org.improving.ConsoleInputOutput;
+import org.improving.InputOutput;
 import org.springframework.stereotype.Component;
 
 @Component
-public class StarWarsMadLibs {
-    ConsoleInputOutput io = new ConsoleInputOutput();
+public class StarWarsMadLibs implements MiniGame {
+    InputOutput io;
+
+    public StarWarsMadLibs(InputOutput io) {
+        this.io = io;
+    }
+
     public void run(){
         io.displayText("You travel long through the wasteland until coming across what appears to be a life size replica of the Millennium Falcon. " +
                 "\nThe ship is covered in weathered rust spots, various dings, scratches, minor superficial damage and is currently listing to port side. " +

@@ -17,6 +17,10 @@ public class LookCommand extends BaseAliasCommand {
     public void execute(String input, GameContext gameContext) {
         var location = gameContext.getPlayer().getLocation();
         io.displayText("You look to see that you are at: " + location.getName());
-        io.displayText("\nYou may exit to " + location.getExits().getName());
+        io.displayText("\nYou may move to " + location.getExits().getName());
+        if (location.getAdversary() != null) {
+            io.displayText("\nWatch out! " + location.getAdversary().getName() + " is right behind you! He wants to " + location.getAdversary().getAttackType());
+        }
+
     }
 }

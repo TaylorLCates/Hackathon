@@ -1,6 +1,7 @@
 package org.improving;
 
 import org.improving.domain.Adversary;
+import org.improving.domain.AttackType;
 import org.improving.domain.Exit;
 import org.improving.domain.Location;
 import org.springframework.stereotype.Component;
@@ -16,12 +17,12 @@ public class WorldFactory {
         var gs = new Location("Game Shop", new Exit("Mom's Basement", mb, "exit"));
         var cc = new Location("Comic Con", new Exit("Game Shop", gs, "gs", "exit"));
 
-        cc.setAdversary(new Adversary("Fan Girl"));
-        gs.setAdversary(new Adversary("Not Tim"));
-        mb.setAdversary(new Adversary("Bearded Basement Dweller"));
-        mf.setAdversary(new Adversary("Han Incredibly Solo"));
-        cp.setAdversary(new Adversary("LARPer"));
-        fd.setAdversary(new Adversary("The Master Hand"));
+        cc.setAdversary(new Adversary("Fan Girl", AttackType.Trivia));
+        gs.setAdversary(new Adversary("Not Tim", AttackType.RollRice));
+        mb.setAdversary(new Adversary("Bearded Basement Dweller", AttackType.CheatCode));
+        mf.setAdversary(new Adversary("Han Incredibly Solo", AttackType.MadLib));
+        cp.setAdversary(new Adversary("LARPer", AttackType.Attack));
+        fd.setAdversary(new Adversary("The Master Hand", AttackType.OrderItems));
 
         // This is the starting location of the player.
         return cc;
