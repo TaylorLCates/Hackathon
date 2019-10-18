@@ -56,10 +56,11 @@ public class GuessCheatCode implements MiniGame {
             io.displayText("I need help finding the cheat code for my game.");
             io.displayText("I know it's a prime number between "+ miniGameRange.get(0)
                     + " and " + miniGameRange.get(1) + ".");
-            io.displayPrompt("What's your guess?");
+            io.displayText("What's your guess?");
 
              while (cheatCodeGuessed == false) {
 
+                io.displayPrompt("> ");
                 String input = io.receiveInput();
                  io.displayText("");
 

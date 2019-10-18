@@ -56,6 +56,7 @@ public class RollDice implements MiniGame {
             }
             else {
                 io.displayPrompt("You lost! Press Enter to roll again");
+                io.displayPrompt("> ");
                 io.receiveInput();
                 io.displayText("");
             }

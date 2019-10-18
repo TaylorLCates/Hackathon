@@ -7,6 +7,4 @@ public enum AttackType {
     MadLib,
     Attack,
     OrderItems
-
-
 }

@@ -33,6 +33,7 @@ public class FandomTrivia implements MiniGame {
                 "Hope"};
         for (int i = 0; i < questions.length; i++) {
             io.displayText(questions[i]);
+            io.displayPrompt("> ");
             String input = io.receiveInput();
             if (input.equalsIgnoreCase(answers[i])) {
                 score++;

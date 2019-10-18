@@ -26,26 +26,37 @@ public class StarWarsMadLibs implements MiniGame {
                 "\n " +
                 "\nHe ushers you inside, pours you a glass of blue milk, and kicks his feet up on the circular table between you. ");
         io.displayText("'Alright, give me an area of the office.' ");
-       String area1 = io.receiveInput();
+        io.displayPrompt("> ");
+        String area1 = io.receiveInput();
         io.displayText("'Alright, give me an adverb. No colors. Looking at you, Zach.'");
+        io.displayPrompt("> ");
         String adverb1 = io.receiveInput();
         io.displayText("'Now, give me an adjective.' ");
+        io.displayPrompt("> ");
         String adjective1 = io.receiveInput();
         io.displayText("'Without thinking too hard, give me the last drink you regretted having.\n \n Look, that's what it says. Quit giving me that look.' ");
+        io.displayPrompt("> ");
         String booze1 = io.receiveInput();
         io.displayText("'This is fun, just asking people questions. I should have been a therapist. \nHow does giving me a verb ending with 'ing' make you feel?'");
+        io.displayPrompt("> ");
         String verbing1 = io.receiveInput();
         io.displayText("'Adverb me, bro.' ");
+        io.displayPrompt("> ");
         String adverb2 = io.receiveInput();
         io.displayText("Adjectives all day! Sorry, I got excited. Ahem. I need an adjective. ");
+        io.displayPrompt("> ");
         String adjective2 = io.receiveInput();
         io.displayText("Another location, please. Someplace nice. Or not. It's your madlibs, I'm not the boss of you.");
+        io.displayPrompt("> ");
         String location1 = io.receiveInput();
         io.displayText("This is gonna sound strange but.. A liquid. \nI'm trusting you on this one. ");
+        io.displayPrompt("> ");
         String liquid1 = io.receiveInput();
         io.displayText("I'm extending a lot of trust with this one too. Name a body part. Don't be nasty, ya'll. ");
+        io.displayPrompt("> ");
         String bodypart = io.receiveInput();
         io.displayText("Ok, you can't mess this one up too bad. A verb.  ");
+        io.displayPrompt("> ");
         String verb1 = io.receiveInput();
 
 
