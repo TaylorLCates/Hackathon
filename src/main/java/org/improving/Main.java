@@ -8,9 +8,8 @@ public class Main {
         InputOutput io = new ConsoleInputOutput();
 
         var context = new AnnotationConfigApplicationContext(SpringContext.class);
+        var game = context.getBean(Game.class);
+        game.run();
 
-        io.displayPrompt("> ");
-        var input = io.receiveInput();
-        io.displayText(input);
     }
 }
