@@ -3,7 +3,9 @@ package org.improving;
 import org.improving.domain.Adversary;
 import org.improving.domain.Exit;
 import org.improving.domain.Location;
+import org.springframework.stereotype.Component;
 
+@Component
 public class WorldFactory {
     public Location buildWorld() {
 
