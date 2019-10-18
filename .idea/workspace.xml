@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="049b4b27-e221-4dbe-b182-9fe3963d7dbe" name="Default Changelist" comment="create locations in world factory and make replace exit list with single exit">
+    <list default="true" id="049b4b27-e221-4dbe-b182-9fe3963d7dbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/GameContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/GameContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/commands/BaseAliasCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/commands/BaseAliasCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/commands/LookCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/commands/LookCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/improving/domain/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/improving/domain/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571414322727</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix look command">
+      <created>1571415224841</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1571415224841</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add move command">
+      <created>1571416650096</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571416650096</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +169,8 @@
     <MESSAGE value="add game context" />
     <MESSAGE value="modify base alias command and add look command" />
     <MESSAGE value="integrate look command into io loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrate look command into io loop" />
+    <MESSAGE value="fix look command" />
+    <MESSAGE value="add move command" />
+    <option name="LAST_COMMIT_MESSAGE" value="add move command" />
   </component>
 </project>

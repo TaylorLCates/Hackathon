@@ -25,8 +25,13 @@ public class MoveCommand extends BaseAliasCommand {
         var destArr = Arrays.copyOfRange(parts, 1, parts.length);
         var dest = String.join(" ", destArr);
 
+        var location = gameContext.getPlayer().getLocation();
+        if (location.getAdversary() != null) {
+            io.displayText("YOU SHALL NOT PASS");
+            return;
+        }
 
-        var newLocation = gameContext.getPlayer().getLocation().getExits().getDestination();
+        var newLocation = location.getExits().getDestination();
         gameContext.getPlayer().setLocation(newLocation);
     }
 }
