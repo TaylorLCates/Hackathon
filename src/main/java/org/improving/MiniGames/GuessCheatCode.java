@@ -1,5 +1,6 @@
 package org.improving.MiniGames;
 
+import org.improving.ConsoleInputOutput;
 import org.improving.InputOutput;
 import org.springframework.stereotype.Component;
 
@@ -60,11 +61,10 @@ public class GuessCheatCode implements MiniGame {
 
              while (cheatCodeGuessed == false) {
 
-                io.displayPrompt("> ");
-                String input = io.receiveInput();
+                int input = io.getInteger();
                  io.displayText("");
 
-                if (Integer.parseInt(input) == prime){
+                if (input == prime){
                     io.displayText("");
                     io.displayText("It worked! The cheat code was " + input +". Thanks for helping me find the cheat code.");
                     cheatCodeGuessed = true;
