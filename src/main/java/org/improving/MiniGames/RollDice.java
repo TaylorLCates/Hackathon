@@ -29,6 +29,7 @@ public class RollDice {
             didPlayerWin = true;
         }
         return didPlayerWin;
+
     }
 
 }
