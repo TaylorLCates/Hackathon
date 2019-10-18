@@ -19,7 +19,13 @@ public class Game {
         while (true) {
             io.displayPrompt("> ");
             var input = io.receiveInput();
-            io.displayText(input);
+
+            if (lookCommand.isValid(input, this)) {
+                lookCommand.execute(input, this);
+            } else {
+                io.displayText(input + " doesn't appear to be a valid command.");
+            }
+
 
         }
     }

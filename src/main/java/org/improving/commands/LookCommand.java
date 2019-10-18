@@ -11,6 +11,6 @@ public class LookCommand extends BaseAliasCommand {
 //    }
 
     public LookCommand(InputOutput io) {
-        super(io, "look");
+        super(io, "look", "l", "see", "check");
     }
 }
