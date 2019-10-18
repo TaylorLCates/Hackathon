@@ -5,6 +5,8 @@ import org.improving.commands.LookCommand;
 import org.improving.commands.MoveCommand;
 import org.springframework.stereotype.Component;
 
+import java.util.stream.Stream;
+
 @Component
 public class Game {
 
@@ -12,28 +14,34 @@ public class Game {
     InputOutput io;
     LookCommand lookCommand;
     MoveCommand moveCommand;
+    Command[] commands;
 
-    public Game(ConsoleInputOutput io, LookCommand lookCommand, GameContext gameContext, MoveCommand moveCommand) {
+    public Game(ConsoleInputOutput io, GameContext gameContext, Command[] commands) {
         this.io = io;
-        this.lookCommand = lookCommand;
         this.gameContext = gameContext;
-        this.moveCommand = moveCommand;
+        this.commands = commands;
     }
 
     public void run() {
         while (true) {
             io.displayPrompt("> ");
             var input = io.receiveInput();
+            Command validCommand = getValidCommand(input);
 
-            if (lookCommand.isValid(input, gameContext)) {
-                lookCommand.execute(input, gameContext);
-            } else if (moveCommand.isValid(input, gameContext)) {
-                moveCommand.execute(input, gameContext);
+            if (validCommand != null) {
+                validCommand.execute(input, gameContext);
             } else {
                 io.displayText(input + " doesn't appear to be a valid command.");
             }
 
 
         }
+    }
+
+    public Command getValidCommand(String input) {
+        return Stream.of(commands)
+                .filter(c -> c.isValid(input, gameContext))
+                .findFirst()
+                .orElse(null);
     }
 }
