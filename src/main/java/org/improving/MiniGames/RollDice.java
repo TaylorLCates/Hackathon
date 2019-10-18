@@ -1,5 +1,6 @@
 package org.improving.MiniGames;
 
+import org.improving.ConsoleInputOutput;
 import org.improving.InputOutput;
 import org.springframework.stereotype.Component;
 
@@ -13,6 +14,11 @@ public class RollDice {
     private Integer playerResults;
     private Integer[] rollResults = {0,0};
     private Boolean didPlayerWin = false;
+    private ConsoleInputOutput io;
+
+    public RollDice(ConsoleInputOutput io){
+        this.io = io;
+    }
 
     public Integer[] rollDice() {
         notTimResult = d20.nextInt(100000)%20+1;
@@ -32,4 +38,27 @@ public class RollDice {
 
     }
 
+    public void run() {
+
+        boolean beatNotTim = false;
+
+        while (beatNotTim == false) {
+            RollDice rollDice = new RollDice(io);
+            Integer[] rollResult = rollDice.rollDice();
+
+            io.displayText("You rolled a " + rollResult[1]);
+            io.displayText("NotTim rolled a " + rollResult[0]);
+            io.displayText("");
+            if (rollDice.didPlayerWin(rollResult)) {
+                io.displayText("You won!");
+                beatNotTim = true;
+            }
+            else {
+                io.displayPrompt("You lost! Press Enter to roll again");
+                io.receiveInput();
+                io.displayText("");
+            }
+        }
+
+    }
 }

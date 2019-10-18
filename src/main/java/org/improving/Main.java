@@ -31,25 +31,8 @@ public class Main {
                 game.run();
 
             case"2" :
-                boolean beatNotTim = false;
-
-                while (beatNotTim == false) {
-                    RollDice rollDice = new RollDice();
-                    Integer[] rollResult = rollDice.rollDice();
-
-                    io.displayText("You rolled a " + rollResult[1]);
-                    io.displayText("NotTim rolled a " + rollResult[0]);
-                    io.displayText("");
-                    if (rollDice.didPlayerWin(rollResult)) {
-                        io.displayText("You won!");
-                        beatNotTim = true;
-                    }
-                    else {
-                        io.displayPrompt("You lost! Press Enter to roll again");
-                        io.receiveInput();
-                        io.displayText("");
-                    }
-                }
+                var rollDice = context.getBean(RollDice.class);
+                rollDice.run();
 
         }
 
