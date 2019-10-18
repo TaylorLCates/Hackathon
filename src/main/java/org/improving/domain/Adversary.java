@@ -22,4 +22,8 @@ public class Adversary {
     public void setName(String name) {
         this.name = name;
     }
+
+    public int getHitPoints() {
+        return hitPoints;
+    }
 }
