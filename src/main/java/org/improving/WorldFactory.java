@@ -14,7 +14,7 @@ public class WorldFactory {
         var mf = new Location("To-Scale Millenium Falcon Replica", new Exit("Generic City Park", cp));
         var mb = new Location("Mom's Basement", new Exit("To-Scale Millenium Falcon Replica", mf));
         var gs = new Location("Game Shop", new Exit("Mom's Basement", mb));
-        var cc = new Location("Comic Con", new Exit("Comic Con", gs));
+        var cc = new Location("Comic Con", new Exit("Game Shop", gs, "gs", "exit"));
 
         cc.setAdversary(new Adversary("Fan Girl"));
         gs.setAdversary(new Adversary("Not Tim"));

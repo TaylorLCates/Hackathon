@@ -1,12 +1,17 @@
 package org.improving.domain;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class Player {
     private int hitPoints = 100;
     private List<Item> inventory = new ArrayList<>();
     private Location location;
+
+    public Player() { }
 
     public Player(Location location){
         this.location = location;
