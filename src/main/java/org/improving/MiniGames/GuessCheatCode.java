@@ -1,6 +1,6 @@
 package org.improving.MiniGames;
 
-import org.improving.ConsoleInputOutput;
+import org.improving.InputOutput;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -9,14 +9,14 @@ import java.util.Random;
 import java.util.Scanner;
 
 @Component
-public class GuessCheatCode {
+public class GuessCheatCode implements MiniGame {
 
-    private ConsoleInputOutput io;
+    private InputOutput io;
     private ArrayList<Integer> range = new ArrayList<>();
     private static final Integer[] primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
     private Random rand = new Random();
 
-    GuessCheatCode(ConsoleInputOutput io) {
+    public GuessCheatCode(InputOutput io) {
         this.io = io;
     }
 
@@ -56,10 +56,11 @@ public class GuessCheatCode {
             io.displayText("I need help finding the cheat code for my game.");
             io.displayText("I know it's a prime number between "+ miniGameRange.get(0)
                     + " and " + miniGameRange.get(1) + ".");
-            io.displayPrompt("What's your guess?");
+            io.displayText("What's your guess?");
 
              while (cheatCodeGuessed == false) {
 
+                io.displayPrompt("> ");
                 String input = io.receiveInput();
                  io.displayText("");
 

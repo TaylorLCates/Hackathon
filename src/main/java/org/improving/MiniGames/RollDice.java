@@ -1,22 +1,22 @@
 package org.improving.MiniGames;
 
-import org.improving.ConsoleInputOutput;
+import org.improving.InputOutput;
 import org.improving.InputOutput;
 import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
 @Component
-public class RollDice {
+public class RollDice implements MiniGame {
 
     private Random d20 = new Random();
     private Integer notTimResult;
     private Integer playerResults;
     private Integer[] rollResults = {0,0};
     private Boolean didPlayerWin = false;
-    private ConsoleInputOutput io;
+    private InputOutput io;
 
-    public RollDice(ConsoleInputOutput io){
+    public RollDice(InputOutput io){
         this.io = io;
     }
 
@@ -56,6 +56,7 @@ public class RollDice {
             }
             else {
                 io.displayPrompt("You lost! Press Enter to roll again");
+                io.displayPrompt("> ");
                 io.receiveInput();
                 io.displayText("");
             }
